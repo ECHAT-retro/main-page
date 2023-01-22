@@ -1,0 +1,104 @@
+body {
+    background-color:rgb(255, 217, 161) ;
+    margin: 0;
+}
+
+#bar-menu {
+    background-color:rgb(214, 173, 113) ;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+#buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#buttons > a {
+    cursor:pointer;
+    background-color: rgb(214, 173, 113);
+    color: white;
+    width: 100px;
+    margin: 5px;
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    border-style: dashed solid;
+    scale: 1;
+    transition: border 0.5s ease-in-out, scale 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+#buttons > a:hover {
+    scale: 1.1;
+    border-color: rgb(255, 217, 161);
+}
+
+#bar-menu > p {
+    color: white;
+    width: 100px;
+    margin: 5px;
+    margin-right: 25%;
+    font-size: 35px;
+    text-align: center;
+}
+
+#pages {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+
+}
+
+#pages > div {
+    position: absolute;
+    top: 10%;
+}
+
+#pages::-webkit-scrollbar {
+    background: rgb(214, 173, 113);
+}
+
+#pages::-webkit-scrollbar-thumb {
+    background: rgb(255, 217, 161);
+}
+
+#versions > a {
+    cursor:pointer;
+    color: white;
+    background-color: rgb(214, 173, 113);
+    display: block;
+    width: 130px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+    text-decoration: none;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+#versions > a:hover{
+    background-color: rgb(240, 195, 128);
+}
+
+#versions > a > img {
+    filter: contrast(0) brightness(100);
+    height: 20px;
+    position: absolute;
+    top:22.5px;
+    right: 22.5px;
+}
